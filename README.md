@@ -92,11 +92,11 @@ Here are some of my key certifications and achievements:
 | **React Advanced** | Meta Certification | 2023 | [View Certificate](https://drive.google.com/file/d/1MhMCoRvaavbQl1nnIQuHv8_aKzpZRpoV/view?usp=sharing) |
 
 ## 🌍 Live Portfolio
-Check out my live portfolio: [Your Portfolio Link]
+Check out my live portfolio: [Portfolio Link](https://razz-portfolio-seven.vercel.app/)
 
 ## 👯️ Contact Me
-- Email: [Your Email]
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- Email: [Your Email](rajnishpuri15@gmail.com)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/rajnish-puri-804b11209/)
+- GitHub: [GitHub Profile](https://github.com/RajnishPuri)
 
 Feel free to explore my work and connect with me! 🚀
