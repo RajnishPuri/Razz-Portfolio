@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Mobilelogoicon = () => {
     return (
         <div className="w-[100px] h-[100px] object-cover">

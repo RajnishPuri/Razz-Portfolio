@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Socialicons = () => {
     return (
         <div className="flex justify-evenly w-48">

@@ -1,3 +1,4 @@
+import React from 'react';
 const Typescripticon = () => {
     return (
         <div className="skill-card bg-[#0e223f] hover:text-[#FFA500] hover:cursor-pointer py-8 flex justify-center rounded-md">

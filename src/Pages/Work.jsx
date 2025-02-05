@@ -1,3 +1,4 @@
+import React from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import { ProjectDetails } from '../Details/ProjectDetails';
 

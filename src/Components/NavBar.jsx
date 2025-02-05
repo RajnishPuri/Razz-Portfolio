@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { X } from "lucide-react"; // Lucide icons
@@ -25,15 +27,15 @@ export default function NavBar({ isMenuOpen, setIsMenuOpen }) {
         <div className="w-full">
           <ul className="text-white text-center p-1">
             <hr />
-            <NavLink to={"/"}><li className="nav-item">Home</li></NavLink>
+            <NavLink to={"/Razz-Portfolio/"}><li className="nav-item">Home</li></NavLink>
             <hr />
-            <NavLink to={"/about"}><li className="nav-item">About</li></NavLink>
+            <NavLink to={"/Razz-Portfolio/about"}><li className="nav-item">About</li></NavLink>
             <hr />
-            <NavLink to={"/work"}><li className="nav-item">My Work</li></NavLink>
+            <NavLink to={"/Razz-Portfolio/work"}><li className="nav-item">My Work</li></NavLink>
             <hr />
-            <NavLink to={"/accomplishment"}><li className="nav-item">Accomplishment</li></NavLink>
+            <NavLink to={"/Razz-Portfolio/accomplishment"}><li className="nav-item">Accomplishment</li></NavLink>
             <hr />
-            <NavLink to={"/contact"}><li className="nav-item">Contact Me</li></NavLink>
+            <NavLink to={"/Razz-Portfolio/contact"}><li className="nav-item">Contact Me</li></NavLink>
             <hr />
           </ul>
         </div>
@@ -57,31 +59,31 @@ export default function NavBar({ isMenuOpen, setIsMenuOpen }) {
           <Mobilelogoicon />
           <div className=" w-full flex flex-col items-center z-50">
             <ul className="text-center space-y-2 w-4/5 bg-[#07101F] p-6 rounded-lg ">
-              <NavLink to={"/"} onClick={() => setIsMenuOpen(false)}>
+              <NavLink to={"/Razz-Portfolio/"} onClick={() => setIsMenuOpen(false)}>
                 <li className="nav-item text-xl py-3 hover:text-[#FFA500] transition duration-300">
                   Home
                 </li>
               </NavLink>
               <hr className="border-[#FFA500]/40" />
-              <NavLink to={"/about"} onClick={() => setIsMenuOpen(false)}>
+              <NavLink to={"/Razz-Portfolio/about"} onClick={() => setIsMenuOpen(false)}>
                 <li className="nav-item text-xl py-3 hover:text-[#FFA500] transition duration-300">
                   About
                 </li>
               </NavLink>
               <hr className="border-[#FFA500]/40" />
-              <NavLink to={"/work"} onClick={() => setIsMenuOpen(false)}>
+              <NavLink to={"/Razz-Portfolio/work"} onClick={() => setIsMenuOpen(false)}>
                 <li className="nav-item text-xl py-3 hover:text-[#FFA500] transition duration-300">
                   My Work
                 </li>
               </NavLink>
               <hr className="border-[#FFA500]/40" />
-              <NavLink to={"/accomplishment"} onClick={() => setIsMenuOpen(false)}>
+              <NavLink to={"/Razz-Portfolio/accomplishment"} onClick={() => setIsMenuOpen(false)}>
                 <li className="nav-item text-xl py-3 hover:text-[#FFA500] transition duration-300">
                   Accomplishment
                 </li>
               </NavLink>
               <hr className="border-[#FFA500]/40" />
-              <NavLink to={"/contact"} onClick={() => setIsMenuOpen(false)}>
+              <NavLink to={"/Razz-Portfolio/contact"} onClick={() => setIsMenuOpen(false)}>
                 <li className="nav-item text-xl py-3 hover:text-[#FFA500] transition duration-300">
                   Contact Me
                 </li>

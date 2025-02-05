@@ -1,3 +1,4 @@
+import React from 'react';
 import mapboxgl from "mapbox-gl";
 import { useRef, useEffect, useState } from "react";
 mapboxgl.accessToken = import.meta.env.VITE_MAP_API_KEY;

@@ -1,3 +1,4 @@
+import React from 'react';
 import { AccomplishmentDetails } from "../Details/Accomplishment";
 
 export default function Accomplishment() {

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ProjectCard = ({ project }) => {
     return (
         <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-full max-w-sm border border-gray-700">
