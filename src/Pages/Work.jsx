@@ -3,7 +3,7 @@ import { ProjectDetails } from '../Details/ProjectDetails';
 
 export default function Work() {
     return (
-        <div className="lg:left-64 w-full lg:w-[calc(100vw-18rem)] flex flex-col min-h-screen overflow-x-hidden p-3 text-white items-center overflow-y-auto">
+        <div className="lg:left-64 w-full flex flex-col min-h-screen overflow-x-hidden p-3 text-white items-center overflow-y-auto">
             <div className="text-center mb-6 w-full">
                 <h1 className="font-bold text-4xl sm:text-5xl text-[#FFA500]">Things</h1>
                 <h1 className="font-bold text-4xl sm:text-5xl">I've Built</h1>

@@ -52,8 +52,7 @@ export default function Home() {
           </span>
         </div>
         <p className="font-light text-sm md:text-md leading-relaxed max-w-lg mx-auto lg:mx-0">
-          I&apos;m a passionate web developer and graphic designer. I believe in success through hard work & dedication. I want to join in as a
-          Professional to gain exposure, confidence & a sense of achievement.
+          I am a passionate developer who thrives on learning, problem-solving, and building meaningful solutions. With dedication and a growth mindset, I aim to contribute, innovate, and make a difference.
         </p>
         <div className="flex flex-wrap gap-3 mt-6 justify-center lg:justify-start">
           {["Quick Learner", "Good Problem Solving Skill", "Tech Enthusiast", "Eco-Friendly Person", "Punctuality and Integrity"].map((skill, index) => (
@@ -65,7 +64,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <button className="w-fit p-2 border bg-[#07101F] border-white mt-8 hover:text-[#FFA500] hover:border-[#FFA500] duration-300">
+        <button className="w-fit p-2 border bg-[#07101F] border-white mt-8 hover:text-[#FFA500] hover:border-[#FFA500] duration-300" onClick={() => window.open("https://drive.google.com/file/d/1Ag5qmO-f76LYoi24ECbva6sjeYn4YX9n/view?usp=sharing", "_blank")}>
           MY RESUME
         </button>
       </div>

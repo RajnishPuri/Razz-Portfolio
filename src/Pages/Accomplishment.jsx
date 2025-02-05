@@ -2,7 +2,7 @@ import { AccomplishmentDetails } from "../Details/Accomplishment";
 
 export default function Accomplishment() {
     return (
-        <div className="lg:left-64 w-full lg:w-[calc(100vw-18rem)] flex flex-col min-h-screen overflow-x-hidden p-3 text-white items-center overflow-y-auto">
+        <div className="lg:left-64 w-full flex flex-col min-h-screen overflow-x-hidden pl-6 pr-6 pt-3 text-white items-center overflow-y-auto mb-2">
 
             <div className="text-center mb-6 w-full">
                 <h1 className="font-bold text-4xl sm:text-5xl text-[#FFA500]">Accomplishments</h1>
@@ -10,7 +10,7 @@ export default function Accomplishment() {
             <div className="w-full">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                     {AccomplishmentDetails.map((item, index) => (
-                        <div key={index} className="bg-gray-800 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105 overflow-hidden w-full max-w-xs sm:max-w-sm lg:max-w-md">
+                        <div key={index} className="bg-gray-800 p-4 rounded-xl shadow-lg transform transition duration-300 hover:scale-105 overflow-hidden w-full max-w-xs sm:max-w-sm lg:max-w-md" onClick={() => window.open(item.link, "_blank")}>
                             <img
                                 src={item.image}
                                 alt={item.name}

@@ -34,7 +34,7 @@ function App() {
       </div>
       <div className='w-full lg:w-[calc(100vw-15rem)] bg-[#07101F] h-screen flex flex-col'>
         <div className="lg:hidden w-full bg-[#07101F] p-4 flex justify-between items-center text-white h-16 z-50">
-          <h1 className="text-lg font-bold">LeGiTCoDeR</h1>
+          <h1 className="text-lg font-bold" onClick={() => window.open("https://leetcode.com/u/legitcoder15/", "_blank")}>LeGiTCoDeR</h1>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-2xl">
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -46,7 +46,7 @@ function App() {
         )}
         <div className={`w-full lg:w-[calc(100vw-15rem)] lg:h-screen flex-1 ${isMenuOpen ? "hidden" : "block"} overflow-y-auto `}>
           {loader ? (
-            <div className="h-screen flex items-center justify-center bg-[#0A192F] text-white overflow-hidden">
+            <div className="lg:h-screen h-full flex items-center justify-center bg-[#0A192F] text-white overflow-hidden">
               <Loader />
             </div>
           ) : (
