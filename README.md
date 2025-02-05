@@ -95,7 +95,7 @@ Here are some of my key certifications and achievements:
 Check out my live portfolio: [Portfolio Link](https://razz-portfolio-seven.vercel.app/)
 
 ## 👯️ Contact Me
-- Email: [Your Email](rajnishpuri15@gmail.com)
+- Email: [rajnishpuri15@gmail.com]
 - LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/rajnish-puri-804b11209/)
 - GitHub: [GitHub Profile](https://github.com/RajnishPuri)
 
