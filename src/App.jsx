@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Route, Routes, useLocation } from 'react-router-dom';
@@ -52,11 +53,11 @@ function App() {
             </div>
           ) : (
             <Routes>
-              <Route path="/Razz-Portfolio/" element={<Home />} />
-              <Route path="/Razz-Portfolio/about" element={<About />} />
-              <Route path="/Razz-Portfolio/work" element={<Work />} />
-              <Route path="/Razz-Portfolio/accomplishment" element={<Accomplishment />} />
-              <Route path="/Razz-Portfolio/contact" element={<Contact />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/accomplishment" element={<Accomplishment />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           )}
         </div>
