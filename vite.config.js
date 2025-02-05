@@ -2,7 +2,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  build: {
-    outDir: 'dist', // Output folder for production build
-  },
+  base: '/Razz-Portfolio/', // Set this to your repository name
 });
