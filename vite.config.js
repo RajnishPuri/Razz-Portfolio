@@ -1,15 +1,12 @@
 // vite.config.js
-
-
-// vite.config.js
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  root: './', // Set the root folder to the root of your project
+  root: './', // Root is the project root directory (if index.html is outside src)
   build: {
-    outDir: 'dist', // Ensure the build output goes to the 'dist' folder
+    outDir: 'dist', // Build output directory (default is 'dist')
     rollupOptions: {
-      input: './index.html' // Explicitly point to your index.html file outside the src folder
+      input: './index.html' // Make sure this points to your index.html
     }
   }
 })
