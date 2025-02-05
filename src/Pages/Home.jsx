@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   const terms = ["MERN Developer", "Hackathon Winner", "Learner", "Programmer", "Freelancer"];
@@ -35,14 +35,12 @@ export default function Home() {
       }
     }
   };
-
   return (
     <div className="w-full lg:h-screen flex flex-col lg:flex-row items-center justify-center p-4 lg:p-14 text-white lg:mt-0">
-      {/* Text Section */}
       <div className="text-center lg:text-left w-full lg:w-1/2">
         <h1 className="font-bold text-4xl md:text-6xl">Hi,</h1>
         <div className="flex justify-center lg:justify-start mt-2">
-          <p className="font-bold text-4xl md:text-6xl mr-2">I'm</p>
+          <p className="font-bold text-4xl md:text-6xl mr-2">I&apos;m</p>
           <h1 className="font-bold text-4xl md:text-6xl">Rajnish,</h1>
         </div>
         <div className="mt-3 mb-4">
@@ -50,11 +48,11 @@ export default function Home() {
             className="font-bold text-2xl md:text-4xl text-[#FFA500]"
             style={{ minWidth: `${longestWordLength}ch`, display: 'inline-block' }}
           >
-            {displayedTerm}| {/* Cursor blinking */}
+            {displayedTerm}|
           </span>
         </div>
         <p className="font-light text-sm md:text-md leading-relaxed max-w-lg mx-auto lg:mx-0">
-          I'm a passionate web developer and graphic designer. I believe in success through hard work & dedication. I want to join in as a
+          I&apos;m a passionate web developer and graphic designer. I believe in success through hard work & dedication. I want to join in as a
           Professional to gain exposure, confidence & a sense of achievement.
         </p>
         <div className="flex flex-wrap gap-3 mt-6 justify-center lg:justify-start">
@@ -71,8 +69,6 @@ export default function Home() {
           MY RESUME
         </button>
       </div>
-
-      {/* Image Section */}
       <div className="w-full lg:w-1/2 flex justify-center mt-6 lg:mt-0 lg:mb-0 mb-10">
         <div className="rounded-xl overflow-hidden w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
           <img className="w-full h-auto" src="https://miro.medium.com/max/1785/0*7Q3yvSIv_t0ioJ-Z.gif" alt="Developer GIF" />

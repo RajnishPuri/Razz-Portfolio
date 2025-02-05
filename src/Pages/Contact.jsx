@@ -1,13 +1,13 @@
 import mapboxgl from "mapbox-gl";
-import React, { useRef, useEffect, useState } from "react";
-mapboxgl.accessToken = "pk.eyJ1IjoibGVnaXRjb2RlciIsImEiOiJjbHVrdGlrYmswcGJoMm1uMjg4dHhsNGdtIn0.orFiK8K288Egf23pki-Tgw"; // Replace with your Mapbox token
+import { useRef, useEffect, useState } from "react";
+mapboxgl.accessToken = import.meta.env.VITE_MAP_API_KEY;
 
 export default function Contact() {
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [lng, setLng] = useState(85.36);
-    const [lat, setLat] = useState(26.12);
-    const [zoom, setZoom] = useState(9);
+    const lng = 85.36;
+    const lat = 26.12;
+    const zoom = 9;
 
     const [details, setDetails] = useState({ name: "", email: "", subject: "", message: "" });
 
@@ -19,7 +19,7 @@ export default function Contact() {
     }
 
     function submitHandler(e) {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault();
         console.log(details);
     }
 
@@ -33,7 +33,7 @@ export default function Contact() {
     }
 
     useEffect(() => {
-        if (map.current) return; // Initialize map only once
+        if (map.current) return;
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
             style: "mapbox://styles/mapbox/streets-v12",
@@ -44,13 +44,9 @@ export default function Contact() {
         const marker = new mapboxgl.Marker()
             .setLngLat([85.36, 26.12])
             .addTo(map.current);
-
-        // Add resize event listener to make the map responsive
         window.addEventListener("resize", () => {
             map.current.resize();
         });
-
-        // Cleanup
         return () => window.removeEventListener("resize", () => {
             map.current.resize();
         });
@@ -58,7 +54,6 @@ export default function Contact() {
 
     return (
         <div className="flex flex-col lg:flex-row w-full h-screen p-4 bg-gray-900 overflow-hidden gap-3">
-            {/* Contact Form */}
             <div className="w-full lg:w-1/2 flex justify-center items-center">
                 <div className="w-full max-w-md ">
                     <h1 className="text-4xl font-bold text-[#FFA500] text-center mb-6">
@@ -108,7 +103,6 @@ export default function Contact() {
                 </div>
             </div>
 
-            {/* Map Section */}
             <div className="w-full lg:w-1/2 relative h-[600px] lg:h-full">
                 <div className="absolute z-10 bg-[#07101F] p-1 lg:p-4 top-4 left-4 rounded-lg shadow-lg ">
                     <h1 className="text-[#FFA500] text-2xl font-semibold">Rajnish Puri</h1>

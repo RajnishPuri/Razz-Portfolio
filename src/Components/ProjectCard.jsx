@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
                 {
                     project.github?.frontend ? <a href={project.github.frontend} target="_blank" className="text-blue-400 underline">Frontend</a> : <a href={project.github} target="_blank" className="text-blue-400 underline">GitHub</a>
                 }
-                {project.github?.backend && <a href={project.backend} target="_blank" className="text-blue-400 underline">Backend</a>}
+                {project.github?.backend && <a href={project.github.backend} target="_blank" className="text-blue-400 underline">Backend</a>}
             </div>
             {project.url !== "Not Hosted" && (
                 <a href={project.url} target="_blank" className="block mt-4 text-green-400 underline">Live Demo</a>
