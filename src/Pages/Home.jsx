@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <button className="w-fit p-2 border bg-[#07101F] border-white mt-8 hover:text-[#FFA500] hover:border-[#FFA500] duration-300" onClick={() => window.open("https://drive.google.com/file/d/1LKSVmPaNZX80pYxBdIRoRAFhGKStYL82/view?usp=sharing", "_blank")}>
+        <button className="w-fit p-2 border bg-[#07101F] border-white mt-8 hover:text-[#FFA500] hover:border-[#FFA500] duration-300" onClick={() => window.open("https://drive.google.com/file/d/1kg99x-Lx9orK4HD1Y2XK1r5tEdXrFbn9/view?usp=sharing", "_blank")}>
           MY RESUME
         </button>
       </div>
